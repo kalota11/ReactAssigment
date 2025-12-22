@@ -7,7 +7,7 @@ import {Textarea} from "@/component/Textarea";
 import {Apply} from "@/component/Apply";
 export default function Home() {
   return (
-    <div className="bg-red-50">
+    <div>
       <div>
         <Button/>
         <About/>
