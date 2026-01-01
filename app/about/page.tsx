@@ -5,15 +5,17 @@ import { Apply } from "@/component/Apply";
 import { User } from "@/data";
 import Link from "next/link";
 
-export default function About() {
+interface AboutProps{
+  name : string,
+  age : number
+}
+export default function About(props: AboutProps) {
   return (
     <div>
       <div>
-        <MyButton/>
-        <Apply/>
-        <Submit/>
-        <Textarea/>
-      <Link href="/services/webdevelopment">Web Development</Link>
+        <h1>{props.name}</h1>
+        <h2>{props.age}</h2>
+      <Link href="/services/Contact">Contact</Link>
       </div>
       <p>
         THIS IS PRATICE FOR ROAT
