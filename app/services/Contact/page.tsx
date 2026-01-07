@@ -1,6 +1,14 @@
-export default function Home() {
+interface  ServiceContactprops{
+  name : string,
+  age : number
+}
+
+export default function ServiceContactprops(props :  ServiceContactprops) {
   return (
     <div>
-      <h1>This is an Contact page</h1>
+     <div>
+      <h1>{props.name}</h1>
+        <h2>{props.age}</h2>
+     </div>
     </div>
   )}

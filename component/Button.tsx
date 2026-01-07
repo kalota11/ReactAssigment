@@ -1,9 +1,16 @@
+"use client";
+import { useState } from "react";
 export function MyButton() {
+  const [count, setCount] = useState(0);
   return (
     <div>
-    <button className="divide-double bg-red-100 rounded-md w-1xs px-px">
-      I'm a button
-    </button>
+      <div>Count : {count}</div>
+      <button
+        className="bg-red-500"
+        onClick={() => setCount(count + 1)}
+      >
+        Click me
+      </button>
     </div>
   );
 }
